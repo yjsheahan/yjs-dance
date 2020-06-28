@@ -16,7 +16,6 @@ body {
   background-color: #000;
   color: #FFF;
   margin: 0;
-  padding: 60px 80px;
 }
 
 // Colors - doesn't seem to work
@@ -41,12 +40,21 @@ $light-nude: #E3D3CA;
 //   color: #FFF;
 // }
 
-// h4 {
-//   font-family: font-family: 'Merriweather Sans', sans-serif;
-//   text-transform: uppercase;
-//   font-weight: bold;
-//   line-height: ?
-// }
+h4 {
+  font-family: 'Merriweather Sans', sans-serif;  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 28px;
+  color: #FFF;
+  letter-spacing: 3px;
+  padding-bottom: 8px;
+}
+
+p {
+  font-family: 'Noto Sans', sans-serif;
+  color: #FFF;
+  line-height: 32px;
+  font-weight: bold;
+}
 
 
 // header2 font-family: 'Merriweather Sans', sans-serif;

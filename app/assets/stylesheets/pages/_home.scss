@@ -1,8 +1,12 @@
 // Specific CSS for your home-page
+
+// PART 1: HOMEPAGE CONTAINER 1
+
 .homepage-container {
   display: flex;
   flex-direction: row;
   height: 1120px;
+  padding: 80px 60px 60px 60px;
 }
 
 .homepage-container .left-scene > .logo {
@@ -67,17 +71,37 @@ h1 {
   letter-spacing: 3px;
 }
 
-p {
-  font-family: 'Noto Sans', sans-serif;
-  color: #D09680;
+.homepage-container .left-scene .homepage-text > p {
   font-weight: bold;
-  line-height: 32px;
+  color: #D09680;
 }
 
 .left-scene {
   height: 1000px;
+  // padding-left: 100px;
 }
 
 .homepage-text {
   padding-top: 200px;
+}
+
+
+// PART 2: TRAINING AND SKILLS NUDE CONTAINER
+.training-skills-container {
+  background-color: #E2BEA9;
+  padding: 60px;
+  border-top: solid 10px #FFF;
+  border-bottom: solid 10px #FFF;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+}
+
+.training-skills-container .training-container > h4, .skills-other-container > h4 {
+  color: #000;
+}
+
+.training-skills-container .training-container > p, .training-skills-container .skills-other-container > p {
+  color: #000;
+  line-height: 20px;
 }
