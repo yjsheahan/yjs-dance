@@ -105,3 +105,26 @@ h1 {
   color: #000;
   line-height: 20px;
 }
+
+// PART 3: MEASUREMENTS CONTAINER
+.homepage-container-2 {
+  padding: 80px 60px 60px 60px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 40px;
+}
+
+.movement-image {
+  background-image: url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593360357/20190918_173516_uo2lpn.jpg');
+  opacity: 75%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 600px;
+}
+
+.measurements-container {
+  padding: 40px 0;
+}
+
+
