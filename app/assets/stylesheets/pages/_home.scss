@@ -2,8 +2,11 @@
 .homepage-container > .logo {
   background-image: url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593351276/logo_mt2wne.svg');
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
   height: 200px;
-  width: auto;
+  width: 160px;
+  // image was made with a little extra space on the left. If fixed, change width back to 181px and bg-position: center
 }
 
 .homepage-container > .homepage-headshot {
@@ -16,3 +19,33 @@
   width: 65%;
   min-height: fit-content;
 }
+
+nav {
+  cursor: pointer;
+}
+
+a {
+  color: #FFF;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: color 0.5s;
+}
+
+.homepage-container nav > a {
+  padding-left: 12px;
+}
+
+a:hover {
+  color: #E2BEA9;
+  text-decoration: none;
+}
+
+.active {
+  color: #E5B39A;
+  pointer-events: none;
+}
+
