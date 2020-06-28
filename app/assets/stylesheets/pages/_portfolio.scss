@@ -1,10 +1,38 @@
+.portfolio-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-container {
+  padding: 20px 0 100px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0px;
+  width: 800px;
+  align-items: center;
+}
+
+.title {
+  height: 500px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: none;
+}
+
 .images {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 300px;
-  opacity: 50%;
+  height: 500px;
+  width: 400px;
+  opacity: 65%;
+  margin: none !important;
+  transition: opacity 0.5s;
 }
 
 #image-1 {
@@ -13,6 +41,7 @@
 
 #image-2 {
   background-image: url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593368056/yasminresize-2_gdmmmw.jpg');
+  background-position: top;
 }
 
 #image-3 {
@@ -25,14 +54,19 @@
 
 #image-5 {
   background-image: url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593368117/yasminresize-6_gee7kb.jpg');
+  background-position: top;
 }
 
 #image-6 {
   background-image: url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593368122/yasminresize-7_djgjhz.jpg');
+  background-position: top;
 }
 
 #image-7 {
   background-image: url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593351669/Yasmin-RESIZE_cpfhih.jpg');
 }
 
+.images:hover {
+  opacity: 100%;
+}
 
