@@ -26,11 +26,11 @@
     <%= f.text_area :message, as: :text %>
 
 
-    <%= f.label :nickname %> <br>
-    <%= f.text_field :nickname, hint: 'leave this field blank' %>
+    <%= f.label :nickname, style: "display: none" %> <br>
+    <%= f.text_field :nickname, style: "display: none", hint: 'leave this field blank' %>
 
 
-    <%= f.submit 'Send Message', class: "button" %>
+    <%= f.submit 'SEND', class: "button" %>
   <% end %>
 
 </div>
