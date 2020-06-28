@@ -18,3 +18,35 @@ body {
   margin: 0;
   padding: 60px;
 }
+
+// Colors - doesn't seem to work
+$black: #000;
+$white: #FFF;
+
+$blue: #436996;
+$light-blue: #87A1C0;
+
+
+$deep-nude: #D09680;
+
+$dark-nude: #E5B39A;
+$nude: #E2BEA9;
+$light-nude: #E3D3CA;
+
+// Fonts
+h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #FFF;
+}
+
+// h4 {
+//   font-family: font-family: 'Merriweather Sans', sans-serif;
+//   text-transform: uppercase;
+//   font-weight: bold;
+//   line-height: ?
+// }
+
+
+// header2 font-family: 'Merriweather Sans', sans-serif;
