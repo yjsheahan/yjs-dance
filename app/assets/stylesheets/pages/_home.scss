@@ -1,1 +1,18 @@
 // Specific CSS for your home-page
+.homepage-container > .logo {
+  background-image: url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593351276/logo_mt2wne.svg');
+  background-repeat: no-repeat;
+  height: 200px;
+  width: auto;
+}
+
+.homepage-container > .homepage-headshot {
+  background-image: url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593351669/Yasmin-RESIZE_cpfhih.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 74%;
+  height: 1000px;
+  width: 65%;
+  min-height: fit-content;
+}
