@@ -1,0 +1,16 @@
+.navbar .logo {
+  background-image: url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593351276/logo_mt2wne.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 200px;
+  width: 160px;
+  // image was made with a little extra space on the left. If fixed, change width back to 181px and bg-position: center
+}
+
+.navbar .menu nav {
+  cursor: pointer;
+  a {
+    padding-left: 12px;
+  }
+}
