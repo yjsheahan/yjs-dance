@@ -24,6 +24,9 @@ gem 'jbuilder', '~> 2.7'
 gem 'mail_form'
 
 gem 'bundler', '~> 2.1', '>= 2.1.4'
+
+gem 'sendgrid-ruby'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
