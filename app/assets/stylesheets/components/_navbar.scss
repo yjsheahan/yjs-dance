@@ -18,3 +18,27 @@
     padding-left: 12px;
   }
 }
+
+/* Mobile */
+@media(max-width: 600px) {
+  .navbar {
+    padding: 20px 60px;
+  }
+
+  .navbar .logo {
+    height: 120px;
+    width: 90px;
+  }
+
+  .navbar .menu > nav {
+
+  }
+
+  .navbar .menu nav > a {
+    font-size: 12px
+  }
+
+  .active {
+    display: none;
+  }
+}

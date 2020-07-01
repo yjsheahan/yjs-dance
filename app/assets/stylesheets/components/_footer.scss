@@ -11,3 +11,13 @@
     line-height: 12px;
   }
 }
+
+@media(max-width: 600px) {
+  .footer {
+    padding: 20px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    text-align: center;
+  }
+}

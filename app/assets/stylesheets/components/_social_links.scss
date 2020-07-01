@@ -4,3 +4,9 @@
     font-size: 20px;
   }
 }
+
+@media(max-width: 600px) {
+  .social-links {
+    text-align: center;
+  }
+}

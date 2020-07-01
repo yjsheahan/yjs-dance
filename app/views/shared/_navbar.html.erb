@@ -1,3 +1,4 @@
+
 <div class="navbar">
   <%= link_to root_path do %>
     <div class="logo">
@@ -7,9 +8,16 @@
 
   <div class="menu">
     <nav>
+      <% if controller_name == "pages" && action_name == "portfolio" %>
       <%= link_to "ABOUT", root_path %>
       <%= link_to "PORTFOLIO", portfolio_path, class: "active" %>
       <%= link_to "CONTACT", contact_path %>
+
+      <% elsif controller_name == "pages" && action_name == "contact" %>
+        <%= link_to "ABOUT", root_path %>
+        <%= link_to "PORTFOLIO", portfolio_path %>
+        <%= link_to "CONTACT", contact_path, class: "active" %>
+      <% end %>
     </nav>
   </div>
 </div>
