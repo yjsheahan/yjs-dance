@@ -19,6 +19,13 @@
   }
 }
 
+/* iPad */
+@media(min-width: 576px) and (max-width: 800px) {
+  .navbar .menu nav > a {
+    font-size: 14px;
+  }
+}
+
 /* Mobile */
 @media(max-width: 600px) {
   .navbar {

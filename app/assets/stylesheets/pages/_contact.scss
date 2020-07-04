@@ -1,5 +1,6 @@
 .contact-container {
   padding: 60px;
+  min-height: 85vh;
   label {
     color: #FFF;
     text-transform: uppercase;
@@ -48,3 +49,4 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   display: flex;
   justify-content: flex-end;
 }
+
