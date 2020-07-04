@@ -23,3 +23,137 @@
     </div>
   </div>
 </div>
+
+<div class="overlay">
+  <div class="cross"></div>
+  <section>
+  </section>
+
+  <div class="arrows">
+    <div class="prev" style="background-image: url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593883728/prev_wsnzar.svg');"></div>
+    <div class="next" style="background-image: url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593883728/next_imvw7h.svg');"></div>
+  </div>
+</div>
+
+
+<script>
+
+  const nextTag = document.querySelector(".overlay .arrows .next");
+  const prevTag = document.querySelector(".overlay .arrows .prev");
+
+  const sectionTag = document.querySelector(".overlay section");
+  const crossTag = document.querySelector(".overlay div.cross");
+  const overlayTag = document.querySelector(".overlay");
+  const portfolioPageTag = document.querySelector(".portfolio-page");
+  const firstPhoto = document.querySelector(".portfolio-page .portfolio-container .images#image-1");
+  const secondPhoto = document.querySelector(".portfolio-page .portfolio-container .images#image-2");
+  const thirdPhoto = document.querySelector(".portfolio-page .portfolio-container .images#image-3");
+  const fourthPhoto = document.querySelector(".portfolio-page .portfolio-container .images#image-4");
+  const fifthPhoto = document.querySelector(".portfolio-page .portfolio-container .images#image-5");
+  const sixthPhoto = document.querySelector(".portfolio-page .portfolio-container .images#image-6");
+  const seventhPhoto = document.querySelector(".portfolio-page .portfolio-container .images#image-7");
+
+
+  const photos = [
+    {
+      image: "url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593368061/yasminresize-4_bctit0.jpg')",
+      id: "image-1"
+    },
+    {
+      image: "url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593368056/yasminresize-2_gdmmmw.jpg')",
+      id: "image-2"
+    },
+    {
+      image: "url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593368051/Yasminresize-1_tjbv99.jpg')",
+      id: "image-3"
+    },
+    { image: "url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593368069/yasminresize-5_lyhs7r.jpg')",
+     id: "image-4"
+    },
+    {
+      image: "url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593368117/yasminresize-6_gee7kb.jpg')",
+      id: "image-5"
+    },
+    {
+      image: "url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593368122/yasminresize-7_djgjhz.jpg')",
+      id: "image-6"
+    },
+    {
+      image: "url('https://res.cloudinary.com/dpzjvi2w1/image/upload/v1593351669/Yasmin-RESIZE_cpfhih.jpg')",
+      id: "image-7"
+    }
+  ]
+
+  firstPhoto.addEventListener("click", function () {
+    let photoNumber = 0;
+
+    overlayTag.style.visibility = "visible";
+    sectionTag.style.backgroundImage = photos[photoNumber].image;
+    overlayTag.style.backgroundColor = "rgba(135, 161, 192, 0.6)"
+
+  });
+
+  secondPhoto.addEventListener("click", function () {
+    let photoNumber = 1;
+    overlayTag.style.visibility = "visible";
+    sectionTag.style.backgroundImage = photos[photoNumber].image;
+    overlayTag.style.backgroundColor = "rgba(135, 161, 192, 0.6)"
+
+  });
+
+  thirdPhoto.addEventListener("click", function () {
+    let photoNumber = 2;
+    overlayTag.style.visibility = "visible";
+    sectionTag.style.backgroundImage = photos[photoNumber].image;
+    overlayTag.style.backgroundColor = "rgba(135, 161, 192, 0.6)";
+
+
+  });
+
+  fourthPhoto.addEventListener("click", function () {
+    let photoNumber = 3;
+
+    overlayTag.style.visibility = "visible";
+    sectionTag.style.backgroundImage = photos[photoNumber].image;
+    overlayTag.style.backgroundColor = "rgba(227, 211, 202, 0.8)"
+
+  })
+
+  fifthPhoto.addEventListener("click", function () {
+    let photoNumber = 4;
+
+    overlayTag.style.visibility = "visible";
+    sectionTag.style.backgroundImage = photos[photoNumber].image;
+    overlayTag.style.backgroundColor = "rgba(227, 211, 202, 0.8)"
+
+  })
+
+  sixthPhoto.addEventListener("click", function () {
+    let photoNumber = 5;
+
+    overlayTag.style.visibility = "visible";
+    sectionTag.style.backgroundImage = photos[photoNumber].image;
+    overlayTag.style.backgroundColor = "rgba(227, 211, 202, 0.8)"
+
+  })
+
+  seventhPhoto.addEventListener("click", function () {
+    let photoNumber = 6;
+
+    overlayTag.style.visibility = "visible";
+    sectionTag.style.backgroundImage = photos[photoNumber].image;
+    overlayTag.style.backgroundColor = "rgba(227, 211, 202, 0.8)"
+
+  })
+
+  crossTag.addEventListener("click", function() {
+    overlayTag.style.visibility = "hidden";
+  })
+
+  document.addEventListener("keyup", function (event) {
+    if(event.key == "Escape") {
+      overlayTag.style.visibility = "hidden";
+    }
+  })
+
+</script>
