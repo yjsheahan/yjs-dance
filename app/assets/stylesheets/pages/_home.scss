@@ -149,4 +149,56 @@ h1 {
 
 
 // Mobile
+@media (max-width: 767px) {
+  .homepage-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 40px 20px 40px 20px;
+    position: relative;
+  }
 
+  .homepage-container > .homepage-headshot {
+    opacity: 74%;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, 0);
+  }
+
+  .homepage-text {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+  }
+
+}
+
+@media (max-width: 568px) {
+  .training-skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .homepage-container-2 {
+    padding: 40px 20px 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+
+  .training-container {
+    border-bottom: solid 10px #FFF;
+  }
+
+  .skills-other-container {
+    border-left: none;
+  }
+
+  h1 {
+    font-size: 56px;
+    line-height: 84px;
+  }
+}
