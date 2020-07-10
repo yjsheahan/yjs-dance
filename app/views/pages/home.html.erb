@@ -3,20 +3,20 @@
     <div class="logo">
     </div>
 
-    <nav>
+    <nav data-aos="fade-in">
       <%= link_to "ABOUT", root_path, class: "active" %>
       <%= link_to "PORTFOLIO", portfolio_path %>
       <%= link_to "CONTACT", contact_path %>
     </nav>
 
     <div class="homepage-text">
-      <h1>
+      <h1 data-aos="fade-in">
         Yasmin
         <br />
         Jones Sheahan
       </h1>
 
-      <p>
+      <p data-aos="fade-in">
         Professional Dancer.
         <br />
         Aspiring Choreographer.
@@ -36,15 +36,15 @@
 
 <div class="training-skills-container">
   <div class="bio-training-container">
-    <div class="bio-container">
+    <div class="bio-container" >
       <h4>Biography</h4>
-      <p>
+      <p id="fade-in">
         An experienced, versatile dancer. Yasmin uses her strength to execute weighted, definite actions, while moving with control to showcase every texture. <br />With a strong Hip Hop foundation, she eases naturally into grounded movement, but loves to show intricacy and femininity with the art of Waacking.
          </p>
       </p>
     </div>
 
-    <div class="training-container">
+    <div class="training-container" data-aos="fade-in">
 
       <h4>
         Training
@@ -71,7 +71,7 @@
     </div>
   </div>
 
-  <div class="skills-other-container">
+  <div class="skills-other-container" data-aos="fade-in">
     <div class="skills-container">
       <h4>
         Skills
@@ -99,13 +99,15 @@
       </p>
     </div>
 
-    <div class="other-container">
+    <div class="other-container" data-aos="fade-in">
       <h4>
         Other
       </h4>
-      <p>
-        Pilates/Fitness Instructor
-      </p>
+      <a id="pilates-link" href="https://pilates-with-yasmin.superhi.com/">
+        <p>
+          Pilates/Fitness Instructor
+        </p>
+      </a>
     </div>
 
   </div>
@@ -115,7 +117,7 @@
   <div class="movement-image">
   </div>
 
-  <div class="measurements-container">
+  <div class="measurements-container" data-aos="fade-in">
 
     <h4>
       Measurements
@@ -154,3 +156,41 @@
   </div>
 
 </div>
+<script>
+  const animatedTags = document.querySelectorAll("#fade-in")
+
+  // fade out on load
+  animatedTags.forEach(tag => {
+    tag.style.opacity = 0
+  })
+
+  const fadeIn = function () {
+    // look through all the animated tags and see
+    // with the getBoundingClientRect() if it's in the window
+    let delay = 0.6
+
+    animatedTags.forEach(tag => {
+      const tagTop = tag.getBoundingClientRect().top
+      const tagBottom = tag.getBoundingClientRect().bottom
+
+      if (tagTop < window.innerHeight && tagBottom > 0) {
+        tag.style.animation = `fadeIn 1s ${delay}s both`
+        delay = delay + 0.3
+      } else {
+        tag.style.opacity = 0
+        tag.style.animation = ""
+      }
+    })
+  }
+   // on load, fade in
+  fadeIn();
+
+  document.addEventListener("scroll", function () {
+    fadeIn();
+  })
+
+  // on browser resize, run fadeIn
+  window.addEventListener("resize", function () {
+    fadeIn();
+  })
+</script>
